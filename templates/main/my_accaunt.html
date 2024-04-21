@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my admin account</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="greencss.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="adminhome.css"> -->
+	<link rel="stylesheet" type="text/css" href="myadminaccount.css">
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td id="branding">shipyard</td>
+			<td>home</td>
+			<!-- <td>about us</td> -->
+			<!-- <td>contact</td> -->
+			<td>my account</td>	
+			<!-- <td>my orders</td>	 -->
+			<!-- <td>cart</td> -->
+			<td id="inputwala"><input type="text" name=""></td>
+			<td><a href="#">search</a></td>
+			<td style="float: right;"><a href="#">signout</a></td>
+			<!-- <td><input type="button" name="signout" value="signout"></td> -->
+		</tr>
+	</table>
+
+	<div id="admin_information">
+
+		<div id="admin_image">
+			<img src="">
+		</div>	
+
+		<div id="admin_details">
+		<label>name</label>
+		<input type="text" name="name">
+
+		<label>address</label>
+		<input type="text" name="address">
+
+		<label>email</label>
+		<input type="email" name="email">
+
+		<label>contact</label>
+		<input type="text" name="mobile" pattern="[789][0-9]{9}"  required>	
+		</div>
+		
+	</div>
+
+	<div id="admin_controls">
+		<input type="file" name="pic" accept="image/*" style="float: left;">
+		<button style="float: right;">save</button>
+	</div>
+	
+
+</body>
+</html>
