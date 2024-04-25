@@ -34,8 +34,7 @@ class UserRegisterView(View):
 class UserLoginView(View):
     def get(self, request):
         form =  UserLoginForm()
-
-        return render(request, "log/login.html", {"form" : form})
+        return render(request, "auth/login.html", {"form" : form})
     
     def post(self, request):
         username = request.POST["username"]
@@ -57,10 +56,10 @@ class UserLoginView(View):
             context = {
                 "form" : form
             }
-            return render(request, "log/login.html", {"form" : form}) 
+            return render(request, "auth/login.html", context) 
         
 
 class LOgOUtView(View):
     def get(self, request):
         logout(request)
-        return redirect("landing")
+        return redirect("home")

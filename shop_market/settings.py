@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'import_export',
     #app
     'product',
-    'users',
+    # 'users',
+    'customer',
     'shop',
 ]
 
